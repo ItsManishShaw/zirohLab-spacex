@@ -1,0 +1,34 @@
+/*
+rdt_TableRow */
+.rdt_Table{
+  width: 100% !important;
+
+}
+.rdt_TableCol{
+  display: flex;
+align-items: center;
+align-content: center !important;
+text-align: center;
+background-color:rgba(229, 231, 235,1) !important;
+color: rgba(55, 65, 81,1) !important;
+}
+.rdt_TableHeader{
+  display: none !important;
+}
+.tableContainer{
+  min-width: 80%;
+}
+.rdt_TableHeadRow{
+  /* min-width: 100% !important; */
+}
+.rdt_TableHead{
+  min-width: 100% !important;
+}
+.rdt_TableCol_Sortable{
+  margin: auto;
+}
+/* 
+rdt_TableCell
+rdt_TableFooter
+rdt_TableBody
+rdt_ExpanderRow */
