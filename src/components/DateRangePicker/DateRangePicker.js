@@ -14,7 +14,7 @@ const DateRangeComp = ({
 }) => {
   const [dateRange, setDateRange] = React.useState({});
   return (
-    <div className="flex justify-around space-x-2 border-2 absolute h-7 cursor-pointer " style={{
+    <div className="flex justify-around space-x-2 border-2 h-7 cursor-pointer " style={{
       width:'fit-content',
       top: '18.5%',
       left:'10%'

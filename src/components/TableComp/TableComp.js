@@ -106,4 +106,4 @@ const TableComp = () => {
   )
 }
 
-export default TableComp
+export default TableComp;
