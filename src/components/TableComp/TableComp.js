@@ -24,7 +24,6 @@ const TableComp = () => {
   const [launchType, setLaunchType] = useState('all');
   const [show, setShow] = useState(false);
   const [modalData,setModalData]=useState('')
-  
 
   useEffect(() => {
     setLoading(true);

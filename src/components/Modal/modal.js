@@ -24,7 +24,7 @@ function Modal(props) {
         setShow(false);
       }, msDecider());
     }
-  }, [props]);
+  }, [autoClose]);
 
   const msDecider = () => {
     switch (type) {

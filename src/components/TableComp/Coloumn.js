@@ -1,6 +1,6 @@
 import React from "react";
 
-const GetColumn = (startDate, endDate, projectNames) => {
+const GetColumn = () => {
   const commonHeaderStyle = `font-normal  mx-auto text-center  `;
   const columns = [
     {
@@ -21,7 +21,6 @@ const GetColumn = (startDate, endDate, projectNames) => {
           </div>
         );
       },
-      // maxWidth: "80px !important",
     },
     {
       name: <p className={`${commonHeaderStyle}`}>Lounched UTC</p>,
@@ -43,8 +42,6 @@ const GetColumn = (startDate, endDate, projectNames) => {
           </div>
         );
       },
-      // minWidth: "140px !important",
-      // maxWidth: "160px !important",
     },
     {
       name: (
@@ -64,7 +61,6 @@ const GetColumn = (startDate, endDate, projectNames) => {
        {row?.launch_site?.site_name||'--'}
         </div>
       ),
-      // maxWidth: "80px !important",
     },
     {
       name: (
@@ -84,8 +80,6 @@ const GetColumn = (startDate, endDate, projectNames) => {
           </div>
         );
       },
-      // minWidth: "100px !important",
-      // maxWidth: "120px !important",
     },
     {
       name: <p className={`${commonHeaderStyle}`}>Orbit</p>,
@@ -101,8 +95,6 @@ const GetColumn = (startDate, endDate, projectNames) => {
           {row?.rocket?.second_stage?.payloads[0].orbit||'--'}
         </div>
       ),
-      // minWidth: "80px !important",
-      // maxWidth: "120px !important",
     },
     {
       name: <p className={`${commonHeaderStyle} `}>Launch Status</p>,
@@ -120,8 +112,6 @@ const GetColumn = (startDate, endDate, projectNames) => {
 
         </div>
       ),
-      // minWidth: "80px !important",
-      // maxWidth: "120px !important",
     },
     {
       name: <p className={`${commonHeaderStyle} text-center`}>Rocket</p>,
@@ -138,8 +128,6 @@ const GetColumn = (startDate, endDate, projectNames) => {
 
         </div>
       ),
-      // minWidth: "80px !important",
-      // maxWidth: "120px !important",
     },
   ];
   return columns;

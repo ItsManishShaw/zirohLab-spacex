@@ -1,5 +1,5 @@
 import React from "react";
-import { DateRangePicker, DateRange } from "materialui-daterange-picker";
+import { DateRangePicker } from "materialui-daterange-picker";
 import moment from 'moment';
 import EventIcon from '@material-ui/icons/Event';
 
@@ -12,7 +12,6 @@ const DateRangeComp = ({
   endDate,
   setEndDate
 }) => {
-  const [dateRange, setDateRange] = React.useState({});
   return (
     <div className="flex justify-around space-x-2 border-2 h-7 cursor-pointer " style={{
       width:'fit-content',
@@ -28,7 +27,7 @@ const DateRangeComp = ({
         minDate="01/01/1990"
         maxDate='01/01/2100'
         toggle={() => setOpen(!open)}
-        onChange={(range) => { setStartDate(moment(range.startDate).format('YYYY'));setEndDate(moment(range.endDate).format('YYYY')); setDateRange(range);setOpen(false) }}
+        onChange={(range) => { setStartDate(moment(range.startDate).format('YYYY'));setEndDate(moment(range.endDate).format('YYYY')); setOpen(false) }}
       />  
         </div>
   );
